@@ -20,3 +20,15 @@ format the SD-card. Eg with `SDFormatter`: https://www.sdcard.org/downloads/form
 
 now copy all the contents of the `NOOBS` folder into the root of the SD-card.
 
+#### Install raspbian
+now just put the sd-card into the raspberry-pi and turn in on.
+
+After waiting a while you get the option to install `Raspbian`. Just do that and wait again.
+
+`Raspbian` should be installed now
+
+### Install openssh
+Install openssh in order to do the rest of the steps remotely
+```{r, engine='bash', count_lines}
+sudo apt-get install openssh
+```
