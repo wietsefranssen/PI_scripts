@@ -28,7 +28,21 @@ After waiting a while you get the option to install `Raspbian`. Just do that and
 `Raspbian` should be installed now
 
 ### Install openssh
-Install openssh in order to do the rest of the steps remotely
+Install openssh on the PI in order to do the rest of the steps remotely
 ```{r, engine='bash', count_lines}
-sudo apt-get install openssh
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install openssh-server
 ```
+
+figure out the IP adress of the PI:
+```{r, engine='bash', count_lines}
+ifconfig
+```
+login from the laptop with:
+```{r, engine='bash', count_lines}
+ssh pi@<IP-OF-PI>
+```
+(password is `raspbian`)
+
+
