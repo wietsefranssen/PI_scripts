@@ -36,7 +36,7 @@ sync
 ```
 (see also https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
 
-### Install openssh
+### Install openssh (maybe not needed)
 Install openssh on the PI in order to do the rest of the steps remotely
 ```{r, engine='bash', count_lines}
 sudo apt-get update
@@ -48,10 +48,18 @@ figure out the IP adress of the PI:
 ```{r, engine='bash', count_lines}
 ifconfig
 ```
+or look at first login screen!
+
 login from the laptop with:
 ```{r, engine='bash', count_lines}
 ssh pi@<IP-OF-PI>
 ```
 (password is `raspbian`)
+
+### Update everything
+```{r, engine='bash', count_lines}
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 
