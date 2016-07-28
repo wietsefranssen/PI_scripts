@@ -27,6 +27,14 @@ After waiting a while you get the option to install `Raspbian`. Just do that and
 
 `Raspbian` should be installed now
 
+#### Install raspbian lite
+on OSX:
+```
+diskutil unmountDisk /dev/disk2
+sudo dd bs=1m if=./Downloads/2016-05-27-raspbian-jessie-lite.img of=/dev/rdisk2
+sync
+```
+
 ### Install openssh
 Install openssh on the PI in order to do the rest of the steps remotely
 ```{r, engine='bash', count_lines}
