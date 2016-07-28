@@ -34,6 +34,7 @@ diskutil unmountDisk /dev/disk2
 sudo dd bs=1m if=./Downloads/2016-05-27-raspbian-jessie-lite.img of=/dev/rdisk2
 sync
 ```
+(see also https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
 
 ### Install openssh
 Install openssh on the PI in order to do the rest of the steps remotely
