@@ -82,3 +82,28 @@ see: http://netatalk.sourceforge.net/wiki/index.php/Install_Netatalk_3.1.9_on_De
 ```
 sudo apt-get install hfsprogs hfsutils hfsplus
 ```
+###
+from: https://ubuntuforums.org/showthread.php?t=2105755
+```
+sudo apt-get install libc6-dev avahi-daemon libnss-mdns
+```
+
+
+```
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+    <name replace-wildcards="yes">%h</name>
+    <service>
+        <type>_afpovertcp._tcp</type>
+        <port>548</port>
+    </service>
+    <service>
+        <type>_device-info._tcp</type>
+        <port>0</port>
+        <txt-record>model=TimeCapsule</txt-record>
+    </service>
+</service-group>
+```
+
+
