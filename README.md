@@ -76,3 +76,9 @@ sudo reboot
 
 ### Netatalk installation
 see: http://netatalk.sourceforge.net/wiki/index.php/Install_Netatalk_3.1.9_on_Debian_8_Jessie
+
+
+### HFS
+```
+sudo apt-get install hfsprogs hfsutils hfsplus
+```
