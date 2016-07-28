@@ -69,26 +69,6 @@ Configure your internationalization settings which include language, keyboard la
 sudo raspi-config
 ```
 
-in case you get (not valid anymore):
-```
-Can't set locale; make sure $LC_* and $LANG are correct!
-Reading changelogs... Done
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "nl_NL.UTF-8",
-	LANG = "en_GB.UTF-8"
-```
-do the following:
-```
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-locale-gen en_US.UTF-8
-dpkg-reconfigure locales
-```
-
 #### reboot:
 ```
 sudo reboot
